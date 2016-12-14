@@ -20,29 +20,29 @@ The analog sensor value is read by the MQ2 sensor and compared with the threshol
 
 void loop() <br />
 {<br />
-        if (client.isConnected())
-        client.loop();
-  int analogSensor = analogRead(smokeA0);
-  Serial.print("Pin A0: ");
-  Serial.println(analogSensor);
-  // Checks if it has reached the threshold value
-  if (analogSensor > sensorThres)
-  {
-      i++;
-      if(i == 1)
-       client.publish("led","FIRE!!! Voltage Level is"+String(analogSensor));
-    digitalWrite(redLed, HIGH);
-    digitalWrite(greenLed, LOW);
-    //delay(200);
-    digitalWrite(buzzer, HIGH);
-    //delay(200);
-    //digitalWrite(buzzer, LOW);
+        if (client.isConnected())<br />
+        client.loop();<br />
+  int analogSensor = analogRead(smokeA0);<br />
+  Serial.print("Pin A0: ");<br />
+  Serial.println(analogSensor);<br />
+  // Checks if it has reached the threshold value<br />
+  if (analogSensor > sensorThres)<br />
+  {<br />
+      i++;<br />
+      if(i == 1)<br />
+       client.publish("led","FIRE!!! Voltage Level is"+String(analogSensor));<br />
+    digitalWrite(redLed, HIGH);<br />
+    digitalWrite(greenLed, LOW);<br />
+    //delay(200);<br />
+    digitalWrite(buzzer, HIGH);<br />
+    //delay(200);<br />
+    //digitalWrite(buzzer, LOW);<br />
   }<br />
   else<br />
-  {
-    digitalWrite(redLed, LOW);
-    digitalWrite(greenLed, HIGH);
-    digitalWrite(buzzer, LOW);
+  {<br />
+    digitalWrite(redLed, LOW);<br />
+    digitalWrite(greenLed, HIGH);<br />
+    digitalWrite(buzzer, LOW);<br />
   }<br />
  delay(100);<br />
 }<br />
