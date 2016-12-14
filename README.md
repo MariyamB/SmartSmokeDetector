@@ -5,9 +5,9 @@ Power Point Presentation:https://drive.google.com/open?id=0B61JmW3QIOuQR296aXdLU
 
 Working Video: https://youtu.be/KR6w_hc3lz4
 
-Code Explanation:
-MQTT client code installed on mobile device:
-MQTT client("iot.eclipse.org", 1883, callback);
+Code Explanation:<br />
+MQTT client code installed on mobile device:<br />
+MQTT client("iot.eclipse.org", 1883, callback);<br />
 
 
 A threshold value is set after which the buzzer goes off and the notification is recieved on mobile device.
