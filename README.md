@@ -10,15 +10,16 @@ MQTT client code installed on mobile device:<br />
 MQTT client("iot.eclipse.org", 1883, callback);<br />
 
 
-A threshold value is set after which the buzzer goes off and the notification is recieved on mobile device.
-int sensorThres = 400;
+A threshold value is set after which the buzzer goes off and the notification is recieved on mobile device.<br />
+int sensorThres = 400;<br />
 
-We are using MQTT library in particle bean to connect to MQTT server.
-MQTT client("iot.eclipse.org", 1883, callback);
+We are using MQTT library in particle bean to connect to MQTT server.<br />
+MQTT client("iot.eclipse.org", 1883, callback);<br />
 
-The analog sensor value is read by the MQ2 sensor and compared with the threshold set.When the sensor value is greater than the set threshold value,the client MQTT connection is checked.If the client is connected then the buzzer is triggered and a message is sent to the MQTT topic 'LED'.This inturn pushes a notification onto the mobile device.
+The analog sensor value is read by the MQ2 sensor and compared with the threshold set.<br />When the sensor value is greater than the set threshold value,the client MQTT connection is checked.<br />If the client is connected then the buzzer is triggered and a message is sent to the MQTT topic 'LED'.<br />This inturn pushes a notification onto the mobile device.
 
-void loop() {
+void loop() <br />
+{<br />
         if (client.isConnected())
         client.loop();
   int analogSensor = analogRead(smokeA0);
@@ -36,14 +37,14 @@ void loop() {
     digitalWrite(buzzer, HIGH);
     //delay(200);
     //digitalWrite(buzzer, LOW);
-  }
-  else
+  }<br />
+  else<br />
   {
     digitalWrite(redLed, LOW);
     digitalWrite(greenLed, HIGH);
     digitalWrite(buzzer, LOW);
-  }
- delay(100);
-}
+  }<br />
+ delay(100);<br />
+}<br />
 
 
