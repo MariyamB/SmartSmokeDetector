@@ -7,7 +7,7 @@ Working Video: https://youtu.be/KR6w_hc3lz4
 
 Code Explanation:
 MQTT client code installed on mobile device:
-https://github.com/MariyamB/SmartSmokeDetector/tree/master/MQTT-Patterns-Basic-MQTT-v3.0
+MQTT client("iot.eclipse.org", 1883, callback);
 
 
 A threshold value is set after which the buzzer goes off and the notification is recieved on mobile device.
