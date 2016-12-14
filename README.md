@@ -1,7 +1,7 @@
 # SmartSmokeDetector
 Description:Smart Smoke detector which can sense and send mobile notification using particle photon
 
-Power Point Presentation:https://drive.google.com/open?id=0B61JmW3QIOuQR296aXdLUzJ2aEE
+Power Point Presentation:https://drive.google.com/open?id=0B61JmW3QIOuQSnRkSHJVc0V2R28
 
 Working Video: https://youtu.be/KR6w_hc3lz4
 
